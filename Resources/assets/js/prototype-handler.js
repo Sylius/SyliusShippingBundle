@@ -4,7 +4,7 @@
             var settings = $.extend({
               'prototypePrefix': false,
               'prototypeElementPrefix': '<hr />',
-              'containerSelector': false,
+              'containerSelector': false
             }, options);
 
             return this.each(function() {
@@ -23,6 +23,7 @@
 
                     var prototypeElement = $('#' + prototypePrefix + '_' + selectedValue);
                     var container;
+
                     if (settings.containerSelector) {
                         container = $(settings.containerSelector);
                     } else {

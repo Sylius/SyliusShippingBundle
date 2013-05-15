@@ -8,6 +8,8 @@
  */
 (function ($) {
     $(document).ready(function() {
-        $('#sylius_shipping_method_calculator').handlePrototypes();
+        $('#sylius_shipping_method_calculator').handlePrototypes({
+            'prototypePrefix': 'sylius_shipping_method_calculator_calculators'
+        });
     });
 })( jQuery );
