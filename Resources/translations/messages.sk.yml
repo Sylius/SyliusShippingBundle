@@ -4,6 +4,6 @@
 sylius:
   form:
     shipping_category:
-      name: Ime
+      name: Názov
     shipping_method:
-      name: Ime
+      name: Názov
