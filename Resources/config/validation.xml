@@ -55,7 +55,7 @@
     </class>
 
     <class name="Sylius\Component\Shipping\Model\Rule">
-        <property name="state">
+        <property name="method">
             <constraint name="NotBlank">
                 <option name="message">sylius.shipping_method_rule.method.not_blank</option>
                 <option name="groups">sylius</option>
