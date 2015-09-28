@@ -4,4 +4,4 @@
 sylius:
   shipment:
     ship:
-      success: Kargo işlemi tamamlandı.
+      success: Pristatymas įvykdytas.
