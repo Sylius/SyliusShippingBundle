@@ -4,7 +4,7 @@
 sylius:
   form:
     shipping_category:
-      name: Namn
+      name: Name
     shipping_method:
-      enabled: Aktiverad
-      name: Namn
+      enabled: Aktiviert
+      name: Name
