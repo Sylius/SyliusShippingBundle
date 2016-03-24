@@ -1,9 +1,19 @@
+# This file is part of the Sylius package.
+# (c) Paweł Jędrzejewski
+
+jms_serializer:
+    metadata:
+        directories:
+            sylius-shipping:
+                namespace_prefix: "Sylius\\Component\\Shipping"
+                path: "@SyliusShippingBundle/Resources/config/serializer"
+
 winzou_state_machine:
     sylius_shipment:
-        class: %sylius.model.shipment.class%
+        class: "%sylius.model.shipment.class%"
         property_path: state
         graph: sylius_shipment
-        state_machine_class: %sylius.state_machine.class%
+        state_machine_class: "%sylius.state_machine.class%"
         states:
             checkout: ~
             pending: ~
@@ -38,14 +48,14 @@ winzou_state_machine:
         callbacks:
             after:
                 sylius_sync_units:
-                    do: [@sm.callback.cascade_transition, 'apply']
-                    args: ['object.getUnits()', 'event', 'null', '"sylius_shipment_unit"']
+                    do: ["@sm.callback.cascade_transition", "apply"]
+                    args: ["object.getUnits()", "event", "null", "'sylius_shipment_unit'"]
 
     sylius_shipment_unit:
-        class: %sylius.model.shipment_unit.class%
+        class: "%sylius.model.shipment_unit.class%"
         property_path: shippingState
         graph: sylius_shipment_unit
-        state_machine_class: %sylius.state_machine.class%
+        state_machine_class: "%sylius.state_machine.class%"
         states:
             checkout: ~
             onhold: ~
