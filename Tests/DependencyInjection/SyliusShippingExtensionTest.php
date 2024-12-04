@@ -44,7 +44,7 @@ final class SyliusShippingExtensionTest extends AbstractExtensionTestCase
             [
                 'calculator' => 'test',
                 'label' => 'Test',
-                'form-type' => 'SomeFormType',
+                'form_type' => 'SomeFormType',
                 'priority' => 0,
             ],
         );
@@ -93,7 +93,7 @@ final class SyliusShippingExtensionTest extends AbstractExtensionTestCase
             [
                 'type' => 'test',
                 'label' => 'Test',
-                'form-type' => 'SomeFormType',
+                'form_type' => 'SomeFormType',
                 'priority' => 20,
             ],
         );

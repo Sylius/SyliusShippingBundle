@@ -48,7 +48,7 @@ final class SyliusShippingExtension extends AbstractResourceExtension
                 $definition->addTag(AsShippingCalculator::SERVICE_TAG, [
                     'calculator' => $attribute->getCalculator(),
                     'label' => $attribute->getLabel(),
-                    'form-type' => $attribute->getFormType(),
+                    'form_type' => $attribute->getFormType(),
                     'priority' => $attribute->getPriority(),
                 ]);
             },
@@ -71,7 +71,7 @@ final class SyliusShippingExtension extends AbstractResourceExtension
                 $definition->addTag(AsShippingMethodRuleChecker::SERVICE_TAG, [
                     'type' => $attribute->getType(),
                     'label' => $attribute->getLabel(),
-                    'form-type' => $attribute->getFormType(),
+                    'form_type' => $attribute->getFormType(),
                     'priority' => $attribute->getPriority(),
                 ]);
             },
