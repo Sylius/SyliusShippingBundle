@@ -21,7 +21,7 @@ use Symfony\Component\DependencyInjection\Reference;
 
 final class RegisterCalculatorsPassTest extends AbstractCompilerPassTestCase
 {
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_registers_calculators_in_the_registry(): void
     {
         $this->setDefinition('sylius.registry.shipping_calculator', new Definition());
@@ -47,7 +47,7 @@ final class RegisterCalculatorsPassTest extends AbstractCompilerPassTestCase
         );
     }
 
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_registers_calculators_in_the_form_type_registry(): void
     {
         $this->setDefinition('sylius.registry.shipping_calculator', new Definition());
@@ -68,7 +68,7 @@ final class RegisterCalculatorsPassTest extends AbstractCompilerPassTestCase
         );
     }
 
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_creates_parameter_which_maps_calculators(): void
     {
         $this->setDefinition('sylius.registry.shipping_calculator', new Definition());

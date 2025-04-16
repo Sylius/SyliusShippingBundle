@@ -25,7 +25,7 @@ use Symfony\Component\DependencyInjection\Definition;
 
 final class SyliusShippingExtensionTest extends AbstractExtensionTestCase
 {
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_autoconfigures_shipping_calculator_with_attribute(): void
     {
         $this->container->setDefinition(
@@ -50,7 +50,7 @@ final class SyliusShippingExtensionTest extends AbstractExtensionTestCase
         );
     }
 
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_autoconfigures_shipping_method_resolver_with_attribute(): void
     {
         $this->container->setDefinition(
@@ -74,7 +74,7 @@ final class SyliusShippingExtensionTest extends AbstractExtensionTestCase
         );
     }
 
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_autoconfigures_shipping_method_rule_checker_with_attribute(): void
     {
         $this->container->setDefinition(
@@ -99,7 +99,7 @@ final class SyliusShippingExtensionTest extends AbstractExtensionTestCase
         );
     }
 
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_loads_shipping_method_rules_validation_groups_parameter_value_properly(): void
     {
         $this->load(['shipping_method_rule' => [
@@ -119,7 +119,7 @@ final class SyliusShippingExtensionTest extends AbstractExtensionTestCase
         ]);
     }
 
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_loads_shipping_method_calculators_validation_groups_parameter_value_properly(): void
     {
         $this->load(['shipping_method_calculator' => [
