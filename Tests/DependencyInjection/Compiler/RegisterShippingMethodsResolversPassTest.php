@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace Sylius\Bundle\ShippingBundle\Tests\DependencyInjection\Compiler;
 
+use PHPUnit\Framework\Attributes\Test;
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractCompilerPassTestCase;
 use Sylius\Bundle\ShippingBundle\DependencyInjection\Compiler\RegisterShippingMethodsResolversPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -21,7 +22,7 @@ use Symfony\Component\DependencyInjection\Reference;
 
 final class RegisterShippingMethodsResolversPassTest extends AbstractCompilerPassTestCase
 {
-    #[\PHPUnit\Framework\Attributes\Test]
+    #[Test]
     public function it_registers_resolvers_in_the_registry(): void
     {
         $this->setDefinition('sylius.registry.shipping_methods_resolver', new Definition());
@@ -46,7 +47,7 @@ final class RegisterShippingMethodsResolversPassTest extends AbstractCompilerPas
         );
     }
 
-    #[\PHPUnit\Framework\Attributes\Test]
+    #[Test]
     public function it_creates_parameter_which_maps_resolvers(): void
     {
         $this->setDefinition('sylius.registry.shipping_methods_resolver', new Definition());
