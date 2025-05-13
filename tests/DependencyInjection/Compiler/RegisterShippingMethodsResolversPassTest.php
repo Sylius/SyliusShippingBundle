@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Sylius\Bundle\ShippingBundle\Tests\DependencyInjection\Compiler;
+namespace Tests\Sylius\Bundle\ShippingBundle\DependencyInjection\Compiler;
 
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractCompilerPassTestCase;
 use PHPUnit\Framework\Attributes\Test;
