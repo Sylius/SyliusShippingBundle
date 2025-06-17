@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Sylius\Bundle\ShippingBundle\Tests\Stub;
+namespace Tests\Sylius\Bundle\ShippingBundle\Stub;
 
 use Sylius\Bundle\ShippingBundle\Attribute\AsShippingMethodRuleChecker;
 use Sylius\Component\Shipping\Checker\Rule\RuleCheckerInterface;
