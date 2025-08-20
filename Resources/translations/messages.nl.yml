@@ -11,12 +11,12 @@ sylius:
         shipment:
             state: 'Status'
             states:
-                checkout:   'Afrekenen'
-                pending:    'In afwachting'
-                ready:      'Klaar'
-                shipped:    'Verzonden'
-                returned:   'Retourneren'
-                cancelled:  'Geannuleerd'
+                checkout: 'Afrekenen'
+                pending: 'In afwachting'
+                ready: 'Klaar'
+                shipped: 'Verzonden'
+                returned: 'Retourneren'
+                cancelled: 'Geannuleerd'
             tracking_code: 'Trackingcode'
         shipping_calculator:
             flat_rate_configuration:
