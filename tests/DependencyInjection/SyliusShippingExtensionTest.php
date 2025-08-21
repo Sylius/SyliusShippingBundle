@@ -11,21 +11,22 @@
 
 declare(strict_types=1);
 
-namespace Sylius\Bundle\ShippingBundle\Tests\DependencyInjection;
+namespace Tests\Sylius\Bundle\ShippingBundle\DependencyInjection;
 
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractExtensionTestCase;
+use PHPUnit\Framework\Attributes\Test;
 use Sylius\Bundle\ShippingBundle\Attribute\AsShippingCalculator;
 use Sylius\Bundle\ShippingBundle\Attribute\AsShippingMethodResolver;
 use Sylius\Bundle\ShippingBundle\Attribute\AsShippingMethodRuleChecker;
 use Sylius\Bundle\ShippingBundle\DependencyInjection\SyliusShippingExtension;
-use Sylius\Bundle\ShippingBundle\Tests\Stub\ShippingCalculatorStub;
-use Sylius\Bundle\ShippingBundle\Tests\Stub\ShippingMethodResolverStub;
-use Sylius\Bundle\ShippingBundle\Tests\Stub\ShippingMethodRuleCheckerStub;
 use Symfony\Component\DependencyInjection\Definition;
+use Tests\Sylius\Bundle\ShippingBundle\Stub\ShippingCalculatorStub;
+use Tests\Sylius\Bundle\ShippingBundle\Stub\ShippingMethodResolverStub;
+use Tests\Sylius\Bundle\ShippingBundle\Stub\ShippingMethodRuleCheckerStub;
 
 final class SyliusShippingExtensionTest extends AbstractExtensionTestCase
 {
-    /** @test */
+    #[Test]
     public function it_autoconfigures_shipping_calculator_with_attribute(): void
     {
         $this->container->setDefinition(
@@ -50,7 +51,7 @@ final class SyliusShippingExtensionTest extends AbstractExtensionTestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_autoconfigures_shipping_method_resolver_with_attribute(): void
     {
         $this->container->setDefinition(
@@ -74,7 +75,7 @@ final class SyliusShippingExtensionTest extends AbstractExtensionTestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_autoconfigures_shipping_method_rule_checker_with_attribute(): void
     {
         $this->container->setDefinition(
@@ -99,7 +100,7 @@ final class SyliusShippingExtensionTest extends AbstractExtensionTestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function it_loads_shipping_method_rules_validation_groups_parameter_value_properly(): void
     {
         $this->load(['shipping_method_rule' => [
@@ -119,7 +120,7 @@ final class SyliusShippingExtensionTest extends AbstractExtensionTestCase
         ]);
     }
 
-    /** @test */
+    #[Test]
     public function it_loads_shipping_method_calculators_validation_groups_parameter_value_properly(): void
     {
         $this->load(['shipping_method_calculator' => [
