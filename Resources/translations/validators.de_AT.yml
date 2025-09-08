@@ -16,8 +16,8 @@ sylius:
     shipping_method:
         calculator:
             min: 'Die Versandgebühr darf nicht kleiner als 0 sein.'
-            not_blank: 'Bitte wählen Sie einen Versandmethodenberechner aus.'
-            invalid: 'Ungültiger Berechner. Verfügbare Berechner sind {{ available_calculators }}.'
+            not_blank: 'Bitte wählen Sie einen Versandmethoden-Rechner aus.'
+            invalid: 'Ungültiger Rechner. Verfügbare Rechner sind {{ available_calculators }}.'
         name:
             max_length: 'Der Name der Versandmethode darf höchstens {{ limit }} Zeichen lang sein.'
             min_length: 'Der Name der Versandmethode muss mindestens {{ limit }} Zeichen lang sein.'

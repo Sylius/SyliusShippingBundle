@@ -3,4 +3,4 @@
 
 sylius:
     shipment:
-        shipped: 'Expedierea a fost trimisă cu succes.'
+        shipped: 'La spedizione è stata inviata con successo.'

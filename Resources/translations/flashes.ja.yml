@@ -3,4 +3,4 @@
 
 sylius:
     shipment:
-        shipped: 'Expedierea a fost trimisă cu succes.'
+        shipped: '出荷が正常に完了しました。'
